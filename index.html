@@ -1,0 +1,83 @@
+<!#DOCTYPE html>
+<html lang="EN">
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body class="dis-flex-row">
+        
+        <div class="main dis-flex-column">
+            
+            <header>
+
+                <img class="logo" src="imagenes/Vector.png" alt="logo"/>
+                
+                <label class="desplegar">
+                    <input type="checkbox" onclick="displayDark()">
+                    <span class="slider round"></span>
+                </label>
+
+            </header>
+            <div>
+                
+                <textarea id="text-input" rows="10"
+                class="flex-grow" placeholder="Inserte el texto aqui"></textarea>
+            
+            </div>
+            
+            <div class="controls">
+            
+                <div class="warning">
+                    <small>⚠ Solo letras minúsculas y sin acentos.</small>
+                </div>
+            
+            </div>
+            
+            <div class="dis-flex-column d-sm-flex-row">
+                
+                <button id="encrypt" class="button flex-sm-grow" type="submit"> Encriptar <i class="fa-regular fa-circle-check"></i></button>
+                <button id="unencrypt" class="button flex-sm-grow" type="submit"> Desencriptar <i class="fa-regular fa-circle-check"></i></button>
+            
+            </div>
+            
+        </div>
+
+        <div class="barra dis-flex-column">
+            
+            <div class="info dis-flex-column flex-grow">
+                
+                <div class="info-img d-none d-md-block">
+                    
+                    <img class="animation" src="imagenes/Muñeco.png" alt="muñecon" />
+                
+                </div>
+                
+                <div class="info-txt my-auto">
+                    
+                    <strong>Ningun mensaje fue encontrado</strong><br><br>
+                    <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+                
+                </div>
+            
+            </div>
+            
+            <div id="output"></div>
+            
+            <div class="copy-text">
+            
+                <button id="limpiar" type="button output" class="button copy" onclick="" value="copy">copy <i class="fa-solid fa-clipboard"></i></button>
+           
+            </div>
+        
+        </div>
+        
+        <script src="./script.js"></script>
+        
+        <script src="https://kit.fontawesome.com/32648a8a86.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>
